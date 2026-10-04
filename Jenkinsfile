@@ -12,8 +12,8 @@ pipeline {
         stage('Setup') {
             steps {
                 bat 'if not exist reports mkdir reports'
-                bat 'python -m venv venv'
-                bat 'venv\\Scripts\\python -m pip install bandit'
+                bat '"C:\\Users\\prana\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" -m venv venv'
+                bat 'venv\\Scripts\\python.exe -m pip install bandit'
             }
         }
 
